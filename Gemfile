@@ -30,6 +30,7 @@ gem 'bcrypt', '~> 3.1.12'
 # Bootstrap
 gem 'bootstrap-sass', '3.3.7'
 
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
@@ -61,6 +62,7 @@ group :test do
   gem 'chromedriver-helper'
   gem 'minitest',                 '5.10.3'
   gem 'minitest-reporters',       '1.1.14'
+  gem 'rails-controller-testing'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

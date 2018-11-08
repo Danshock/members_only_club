@@ -23,4 +23,5 @@ class WelcomeControllerTest < ActionDispatch::IntegrationTest
   	assert_response :success
   	assert_select "title", "Log in | #{@base_title}"
   end
+
 end
