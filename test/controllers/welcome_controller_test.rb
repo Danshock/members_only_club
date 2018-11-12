@@ -12,14 +12,14 @@ class WelcomeControllerTest < ActionDispatch::IntegrationTest
     assert_select "title", "Home | #{@base_title}"
   end
 
-  test "should get posts" do
-  	get welcome_posts_url
+  test "should get about" do
+  	get about_url
   	assert_response :success
-  	assert_select "title", "Posts | #{@base_title}"
+  	assert_select "title", "About | #{@base_title}"
   end
 
   test "should get login" do
-  	get welcome_login_url
+  	get login_url
   	assert_response :success
   	assert_select "title", "Log in | #{@base_title}"
   end

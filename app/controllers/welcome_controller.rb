@@ -2,7 +2,7 @@ class WelcomeController < ApplicationController
   def index
   end
 
-  def posts
+  def about
   end
 
   def login

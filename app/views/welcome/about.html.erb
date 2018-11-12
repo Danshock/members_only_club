@@ -1,0 +1,48 @@
+<%= provide(:title, "About") %>
+<h1>About the Project</h1>
+<h3>Authentication</h3><br/>
+  
+<h4>User</h4>
+  <ul>
+    <li>Using strong parameters to proect from malicious users</li>
+  </ul>
+  
+
+<h4>Name</h4>
+  <ul>
+    <li>Name must be present</li>
+  	<li>Name cannot exceed 50 characters</li>
+  </ul>
+
+<h4>Email</h4>
+  <ul>
+  	<li>Email maximum length 255 characters</li>
+  	<li>Only accepts valid email addresses with regex - /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i</li>
+  	<li>Email addresses must be unique (check with semail index)</li>
+  	<li>All email addresses are lower-case</li>
+  </ul>
+
+<h4>Password</h4>
+  <ul>
+  	<li>Using a hashed pasword (password digest)</li>
+  	<li>Minimum length of password is 8 characters</li>
+  </ul>
+
+<h4>Tests</h4>
+  <ul>
+  	<li>Using Minitest & Minitest-reporters gems</li>
+  	<li>Integration tests for valid/invalid submissions</li>
+  	<li>Integration tests for users login</li>
+  </ul>
+
+<h4>Uncategorized</h4>
+  <ul>
+  	<li>Using partials _partialexample.html.erb</li>
+  	<li>Renaming a controller (with migration)</li>
+  	<li>Forcing the use of SSL by default</li>
+  	<li>Procfile created to run a Puma process in production environment</li>
+  	<li>The fixture uses the convetion for passwords so the password is "password"</li>
+  	<li>using fixtures to load a user into the test database</li>
+  	<li>if the user is logged in the button for logging in is changed with the user's name. Which is actually a drop down menu which holds the sign out button.</li>
+
+  </ul>
