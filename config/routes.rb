@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  root 'welcome#index'
 
-  get 'welcome/index'
+  root 'posts#index'
+
   get '/about',     to: 'welcome#about'
   get 'welcome/login'
 
@@ -12,6 +12,9 @@ Rails.application.routes.draw do
   post   '/login',  to: 'sessions#create'
   delete '/logout', to: 'sessions#destroy'
 
+  get     '/new',   to: 'posts#new'
+  post    '/new',   to: 'posts#create'
+
   resources :users, only: [:create, :new, :edit, :update, :show]
-  #resources :posts
+  resources :posts, only: [:new, :create, :index]
 end

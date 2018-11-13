@@ -183,3 +183,13 @@ input {
 	width: auto;
 	margin-left: 0;
 }
+
+.posts {
+	list_style: none;
+	margin: 0;
+	  li {
+	  overflow: auto;
+	  padding: 5px 0;
+	  border-bottom: 1px solid black;
+	  }
+}

@@ -6,12 +6,6 @@ class WelcomeControllerTest < ActionDispatch::IntegrationTest
   	@base_title = "Members Only"
   end
 
-  test "should get index" do
-    get welcome_index_url
-    assert_response :success
-    assert_select "title", "Home | #{@base_title}"
-  end
-
   test "should get about" do
   	get about_url
   	assert_response :success

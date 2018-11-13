@@ -1,13 +1,13 @@
 <%= provide(:title, "About") %>
 <h1>About the Project</h1>
 <h3>Authentication</h3><br/>
-  
-<h4>User</h4>
+
+<h4>User and Post controllers</h4>
   <ul>
     <li>Using strong parameters to proect from malicious users</li>
+    <li>Admin accounts</li>
   </ul>
   
-
 <h4>Name</h4>
   <ul>
     <li>Name must be present</li>
@@ -18,7 +18,7 @@
   <ul>
   	<li>Email maximum length 255 characters</li>
   	<li>Only accepts valid email addresses with regex - /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i</li>
-  	<li>Email addresses must be unique (check with semail index)</li>
+  	<li>Email addresses must be unique (checking with email index)</li>
   	<li>All email addresses are lower-case</li>
   </ul>
 
@@ -33,16 +33,28 @@
   	<li>Using Minitest & Minitest-reporters gems</li>
   	<li>Integration tests for valid/invalid submissions</li>
   	<li>Integration tests for users login</li>
+    <li>Tests for authentication</li>
+    <li>Tests for checking email uniqueness</li>
   </ul>
 
-<h4>Uncategorized</h4>
+<h4>Cookies & Sessions</h4>
+  <ul>
+    <li>Generating a remember token using the cookies method</li>
+    <li>Using a secure remember digest for authenticating tokens</li>
+    <li>Using signed cookies to securely encrypt the cookie before placing it on the browser</li>
+  </ul>
+
+
+<h4>Some other things that were considered...</h4>
   <ul>
   	<li>Using partials _partialexample.html.erb</li>
   	<li>Renaming a controller (with migration)</li>
   	<li>Forcing the use of SSL by default</li>
   	<li>Procfile created to run a Puma process in production environment</li>
+    <li>Using fixtures</li>
   	<li>The fixture uses the convetion for passwords so the password is "password"</li>
-  	<li>using fixtures to load a user into the test database</li>
-  	<li>if the user is logged in the button for logging in is changed with the user's name. Which is actually a drop down menu which holds the sign out button.</li>
+  	<li>Load a user into the test database via fixture</li>
+  	<li>Dynamically change the page depending if a user is signed in or not</li>
+    <li>Using paginate with limited number of posts per page</li>
 
   </ul>
